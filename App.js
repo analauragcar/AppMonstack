@@ -14,7 +14,7 @@ export default function App(){
        </TouchableOpacity>
 
       <TouchableOpacity style={styles.Newaccout}>
-        <Text style={styles.Textaccount}>CRIAR NOVA CONTA</Text>
+        <Text style={styles.Textaccount}>CRIAR CONTA</Text>
       </TouchableOpacity>
      
     </View>
