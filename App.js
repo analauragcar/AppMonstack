@@ -48,8 +48,7 @@ const styles= StyleSheet.create({
 
 
    TextLogin:{
-    color: "#fff",
-    fontFamily: "Sarala"
+    color: "#fff"
    },
 
 
@@ -61,6 +60,7 @@ const styles= StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 15,
+    fontSize: 20
    
    },
 
