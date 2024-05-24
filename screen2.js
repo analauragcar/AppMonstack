@@ -13,9 +13,9 @@ const Cadastro = () => {
         </View>
         <TextInput style={styles.input} placeholder="E-mail" keyboardType="email-address" />
         <TextInput style={styles.input} placeholder="Senha" secureTextEntry />
-        <TextInput style={styles.input} placeholder="Confirmar Senha" secureTextEntry />
+       
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>CADASTRAR</Text>
+          <Text style={styles.buttonText}>LOGIN</Text>
         </TouchableOpacity>
         <View style={styles.divider}>
           <View style={styles.line} />
