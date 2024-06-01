@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image, ScrollView } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Entypo, Octicons, Ionicons } from '@expo/vector-icons';
+
 
 const Bateria = ({ name, voltage, status }) => {
   const statusColor = status === 'up' ? 'green' : status === 'down' ? 'red' : 'orange';
@@ -56,19 +57,19 @@ const Monitoramento = () => {
       </ScrollView>
       <View style={styles.footer}>
         <TouchableOpacity style={styles.footerButton}>
-          <Ionicons name="ios-eye" size={24} color="black" />
+        <Entypo name="battery" size={24} color="black" />
           <Text style={styles.footerButtonText}>Monitoramento</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.footerButton}>
-          <Ionicons name="ios-stats-chart" size={24} color="black" />
+        <Octicons name="graph" size={24} color="black" />
           <Text style={styles.footerButtonText}>Gráficos</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.footerButton}>
-          <Ionicons name="ios-location" size={24} color="black" />
+        <Ionicons name="location" size={24} color="black" />
           <Text style={styles.footerButtonText}>Localização</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.footerButton}>
-          <Ionicons name="ios-document" size={24} color="black" />
+        <Ionicons name="newspaper-outline" size={24} color="black" />
           <Text style={styles.footerButtonText}>Relatórios</Text>
         </TouchableOpacity>
       </View>
@@ -84,14 +85,16 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: 'bold',
-    textAlign: 'center',
-    marginVertical: 20,
-    color: '#333',
+    color: '#1c4a82',
+    marginBottom: 200,
+    alignContent: 'center',
+    alignItems: 'center'
   },
   buttonsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
     marginBottom: 20,
+    color: '#00366B' 
   },
   button: {
     padding: 10,
@@ -103,11 +106,12 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
+    
   },
   buttonText: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '#333',
+    color: '#00366B',
   },
   scrollView: {
     flex: 1,
