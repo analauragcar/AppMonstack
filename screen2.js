@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 
-const Cadastro = () => {
+const Login = () => {
   return (
     <View style={styles.container}>
       <View style={styles.form}>
@@ -86,4 +86,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Cadastro;
+export default Login;

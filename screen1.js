@@ -1,7 +1,7 @@
 import{ View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import { Colors } from 'react-native/Libraries/NewAppScreen'
 
-export default function App(){
+export default function Inicio({navigation}){
   return(
     <View style={styles.container}>
       <Image
@@ -9,11 +9,11 @@ export default function App(){
       style={styles.logo}
       />
       
-      <TouchableOpacity style={styles.Login}>
+      <TouchableOpacity style={styles.Login} onPress={() => navigation.navigate('Login')}>
           <Text style={styles.TextLogin} >LOGIN</Text>
        </TouchableOpacity>
 
-      <TouchableOpacity style={styles.Newaccout}>
+      <TouchableOpacity style={styles.Newaccout} onPress={() => navigation.navigate('Cadastro')}>
         <Text style={styles.Textaccount}>CRIAR CONTA</Text>
       </TouchableOpacity>
      
